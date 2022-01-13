@@ -12,6 +12,9 @@ export class User {
     @Prop({required: true})
     password: string;
 
+    @Prop({default: 'user'})
+    type: string
+
     @Prop({type: Types.ObjectId, ref: 'Profile'})
     profile: Profile
 }

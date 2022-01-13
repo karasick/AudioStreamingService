@@ -1,4 +1,4 @@
-enum AlbumType {
+export enum AlbumType {
     ALBUM =   'album',
     SINGLE = 'single',
     PLAYLIST = 'playlist'

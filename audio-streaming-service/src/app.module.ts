@@ -8,6 +8,7 @@ import { AlbumModule } from './album/album.module';
 import { AuthModule } from './auth/auth.module';
 import {APP_GUARD} from "@nestjs/core";
 import {JwtAuthGuard} from "./auth/guards/jwt-auth.guard";
+import { CaslModule } from './casl/casl.module';
 
 @Module({
   providers: [
@@ -26,6 +27,7 @@ import {JwtAuthGuard} from "./auth/guards/jwt-auth.guard";
     CommentModule,
     AlbumModule,
     AuthModule,
+    CaslModule,
   ],
 })
 export class AppModule {}
